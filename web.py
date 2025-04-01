@@ -20,4 +20,4 @@ for index, todo in enumerate(todos):
         del st.session_state[todo]
         st.rerun()
 
-st.text_input(label="Add todo", label_visibility=False, placeholder="Add new todo...", on_change=add_todo, key='new_todo')
+st.text_input(label="Add todo", label_visibility="collapsed", placeholder="Add new todo...", on_change=add_todo, key='new_todo')
